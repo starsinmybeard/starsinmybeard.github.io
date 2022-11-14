@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div>
+    <h1>Enter a Book:</h1>
+    <form action="http://localhost:8080/api/enteringbooks" method="post">
+        <label for="bookTitle">Book Title:</label>
+        <input name="bookTitle" type="text"/ required=true>
+
+        <label for="authorName">Author Name:</label>
+        <input name="authorName" type="text"/ required=true>
+
+        <label for="genre">Genre:</label>
+        <input name = "genre" type="text"/ required=false>
+
+        <label for="isbn">ISBN:</label>
+        <input name = "isbn" type ="number"/ required=false>
+
+        <label for="purchaseLocation">Bought from:</label>
+        <input name = "purchaseLocation" type="text"/ required=false>
+
+        <label for="price">Purchase Price:</label>
+        <input name = "price" type="number"/ required=false>
+
+        <label for="purchaseDate">Date of Purchase:</label>
+        <input name = "purchaseDate" type ="date"/ required=false>
+
+        <label for="notes">Additional Notes:</label><br />
+        <textarea id="about" name="about" rows="2" cols="40"></textarea>
+
+        <label for="purchaseLocation">Purchase Location:</label>
+        <select id="purchaseLocation" name="purchaseLocation">
+        <option value="">--Please choose an option--</option>
+          <option value="garlandCountyLibrary">Garland County Library - Friends of the Bookstore</option>
+          <option value="ebay">Ebay</option>
+          <option value="amazon">Amazon</option>
+          <option value="barnesAndNoble">Barnes and Noble</option>
+        </select>
+        <input type="submit" value="Send" />
+    </div>
+
+
+
+    </form>
+
+
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>
