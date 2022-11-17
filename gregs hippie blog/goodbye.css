@@ -1,0 +1,17 @@
+
+
+body, html {
+    height: 100%;
+  }
+  
+  .container {
+    background-image: url("/gregs hippie blog/goodbye.gif");
+  
+    
+    height: 100%;
+    width: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

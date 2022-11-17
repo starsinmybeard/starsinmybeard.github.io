@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  body{
+      min-width:300px;
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  @font-face {
+    font-family: 'BazarMedium';
+    src: url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/bazar-webfont.eot');
+    src: url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/bazar-webfont.eot?iefix') format('eot'),
+         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/bazar-webfont.woff') format('woff'),
+         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/bazar-webfont.ttf') format('truetype'),
+         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/bazar-webfont.svg#webfont4U38ahXF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  html{
+    cursor: url("/gregs hippie blog/newertest.png"), auto;
+  }
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .5fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr .15fr;
+    grid-template-areas:
+    "A A A A "
+    "C E L B "
+    "C F M T "
+    "D D D D ";
+    column-gap: 0px;
+    row-gap: 0px;
+}
+
+div .homepage-header{
+    display: grid;
+    place-items: center;
+    grid-area: A;
+    border-color: black;
+    border-style: outset;
+    background-image: url("/gregs hippie blog/hippie-wallpaper-1.jpg");
+    background-size: 100% 100%;
+    color: #f1ee14;	text-shadow: -4px -4px 0px #000000, -4px 5px 1px #000000;
+	font: 70px 'BazarMedium';
+	letter-spacing: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-header h5{
+    font-style: italic;
+    color: #ffffff;	text-shadow: -2px -2px 0px #3c009c, -4px 5px 1px #015677;
+}
+
+div .homepage-body {
+    text-align: left;
+    background-color: green;
+    color: white;
+    border-color: white;
+    border-style: inset;
+    color: #d7ceb2;	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font: 24px 'BazarMedium';
+	letter-spacing: 3px;
+}
+
+.homepage-body #beatles{
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.homepage-body h3{
+    text-align: right;
+}
+
+.homepage-body #beatles{
+    text-align: center;
+}
+
+
+div .homepage-footer{
+    display: grid;
+    place-items: center;
+    background-color: blue;
+    color: wheat;
+    grid-area: D;
+    border-color: white;
+    border-style: inset;
+}
+
+div .video-grid{
+    display: grid;
+    place-items: center;
+    background-image: url("/gregs hippie blog/dancingbears2.jpg");
+    background-position: 100%;
+    background-size: 100%;
+    grid-area: L;
+}
+
+div #ad-grid{
+    background-image: url("/gregs\ hippie\ blog/spinning-color-peace-sign.gif");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: F; 
+}
+
+
+/* SIDEBAR FLEX */
+
+.homepage-sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    grid-area: C;
+    background-color: royalblue;
+    justify-content: space-evenly;
+    
+}
+
+.couch-link #woodstockVideo{
+    width: 250px;
+    height: 250px;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+}
+
+ .voterForm{
+    background-color: sienna;
+    text-align: left;
+    background-color: rgb(37, 99, 51);
+    color: rgb(114, 3, 3);
+    border-color: white;
+    border-style: inset;
+    color: #ffffff;	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font: 26px 'BazarMedium';
+	letter-spacing: 3px;
+    
+}
+
+.welcome-note{
+    grid-area: E;
+    text-align: center;
+    background-color: rgb(62, 107, 158);
+    color: white;
+    border-color: white;
+    border-style: inset;
+    color: #d7ceb2;	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font: 24px 'BazarMedium';
+	letter-spacing: 3px; 
+}
+
+.map-img {
+    text-align: center;
+    background-image: url("/gregs hippie blog/hippie-wallpaper-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: T;
+    object-fit: cover;
+}
+
+ 
+.vid-border{
+  width: 100%;
+  height: 100%;
+  background: red;
+  animation: mymove 15s infinite;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: solid black 2px;
+  flex-wrap: wrap;
+}
+
+@keyframes mymove {
+  0% {background-color: red;}
+  10% {background-color: orange;}
+  20% {background-color: yellow;}
+  40%{background-color: blue;}
+  50% {background-color: purple;}
+  60%{background-color: blue;}
+  70% {background-color: green;}
+  80% {background-color: yellow;}
+  90% {background-color: orange;}
+  100% {background-color: red;}
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .html{
+        width: 800px;
+  };
+}
+
+#player {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 100px;
+    height: 20px;
+}
