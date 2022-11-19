@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="nickslibrary.css">
+    <title>Library</title>
 </head>
 
 
 <body>
-    <div>
+    <div id="enterForm">
     <h1>Enter a Book:</h1>
     <form action="http://localhost:8080/api/enteringbooks" method="post">
         <label for="bookTitle">Book Title:</label>
         <input name="bookTitle" type="text"/ required=true>
-
+        <br>
         <label for="authorName">Author Name:</label>
         <input name="authorName" type="text"/ required=true>
-
+        <br>
         <label for="genre">Genre:</label>
         <input name = "genre" type="text"/ required=false>
-
+        <br>
         <label for="isbn">ISBN:</label>
         <input name = "isbn" type ="number"/ required=false>
-
+        <br>
         <label for="purchaseLocation">Bought from:</label>
         <input name = "purchaseLocation" type="text"/ required=false>
-
+        <br>
         <label for="price">Purchase Price:</label>
         <input name = "price" type="number"/ required=false>
-
+        <br>
         <label for="purchaseDate">Date of Purchase:</label>
         <input name = "purchaseDate" type ="date"/ required=false>
-
+        <br>
         <label for="notes">Additional Notes:</label><br />
         <textarea id="about" name="about" rows="2" cols="40"></textarea>
-
+        <br>
         <label for="purchaseLocation">Purchase Location:</label>
         <select id="purchaseLocation" name="purchaseLocation">
         <option value="">--Please choose an option--</option>

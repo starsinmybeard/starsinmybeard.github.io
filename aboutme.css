@@ -11,13 +11,23 @@
   }
 
   body {
-	color: #0abe22;	text-shadow: 1px 1px 0px #0c34ff, 2px 2px 0px #000107;
+	color: #0abe22;	text-shadow: 1px 1px 0px #333852, 2px 2px 0px #000107;
 	font: 20px 'BazarMedium';
 	letter-spacing: 2px;
     text-align: center;
     display: grid;
 }
-
+header{
+    text-align: left;
+}
+h1{
+    text-align: right;
+}
+p{
+    color: #0abe22;	text-shadow: 1px 1px 1px #0c34ff, 2px 2px 0px #000107;
+    text-align: left;
+    
+}
 
 
 body{
