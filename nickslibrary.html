@@ -13,39 +13,49 @@
     <div id="enterForm">
     <h1>Enter a Book:</h1>
     <form action="http://localhost:8080/api/enteringbooks" method="post">
+
         <label for="bookTitle">Book Title:</label>
-        <input name="bookTitle" type="text"/ required=true>
-        <br>
+        <input name="bookTitle" type="text"/ required=true><br>
+
         <label for="authorName">Author Name:</label>
-        <input name="authorName" type="text"/ required=true>
-        <br>
+        <input name="authorName" type="text"/ required=true><br>
+
         <label for="genre">Genre:</label>
-        <input name = "genre" type="text"/ required=false>
-        <br>
+        <input name = "genre" type="text"/ required=false><br>
+
         <label for="isbn">ISBN:</label>
-        <input name = "isbn" type ="number"/ required=false>
-        <br>
-        <label for="purchaseLocation">Bought from:</label>
-        <input name = "purchaseLocation" type="text"/ required=false>
-        <br>
+        <input name = "isbn" type ="number"/ required=false><br>
+       
         <label for="price">Purchase Price:</label>
-        <input name = "price" type="number"/ required=false>
-        <br>
-        <label for="purchaseDate">Date of Purchase:</label>
-        <input name = "purchaseDate" type ="date"/ required=false>
-        <br>
-        <label for="notes">Additional Notes:</label><br />
-        <textarea id="about" name="about" rows="2" cols="40"></textarea>
-        <br>
+        <input type="text" list="price" />
+            <datalist id="price">
+                <option>$1</option>
+                <option>$2</option>
+            </datalist> <br>
+
+
         <label for="purchaseLocation">Purchase Location:</label>
-        <select id="purchaseLocation" name="purchaseLocation">
-        <option value="">--Please choose an option--</option>
-          <option value="garlandCountyLibrary">Garland County Library - Friends of the Bookstore</option>
-          <option value="ebay">Ebay</option>
-          <option value="amazon">Amazon</option>
-          <option value="barnesAndNoble">Barnes and Noble</option>
-        </select>
-        <input type="submit" value="Send" />
+            <select id="purchaseLocation" name="purchaseLocation">
+                    <option value="">--Please choose an option--</option>
+                    <option value="garlandCountyLibrary">Garland County Library - Friends of the Bookstore</option>
+                    <option value="ebay">Ebay</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="barnesAndNoble">Barnes and Noble</option>
+            </select>
+        
+        
+        <label for="purchaseDate">Date of Purchase:</label>
+        <input name = "purchaseDate" type ="date"/ required=false><br>
+
+
+        <label for="notes">Additional Notes:</label><br />
+        <textarea id="about" name="about" rows="2" cols="40"></textarea><br>
+
+        <input type="submit" value="Add Book" /><br>
+
+        
+
+        
     </div>
 
 
