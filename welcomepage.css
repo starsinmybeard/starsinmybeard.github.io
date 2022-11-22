@@ -1,8 +1,6 @@
 body{
     margin: 0px;
     padding: 0px;
-
-    
 }
 
 
@@ -26,8 +24,8 @@ body{
 }
 
 .box > img{
-    flex-shrink: 10;
-    width: 125%;
+    /* flex-shrink: 10; */
+    width: 200%;
     height: 125%
 }
 
@@ -44,7 +42,7 @@ body{
 
   a:link, a:visited {
       
-	color: #0abe22;	text-shadow: 1px 1px 0px #0c34ff, 2px 2px 0px #000107;
+	color: #0beb28;	text-shadow: 2px 2px 3px #0c34ff, 2px 2px 0px #041470;
 	font: 20px 'BazarMedium';
 	letter-spacing: 2px;
     text-align: center;
@@ -58,7 +56,20 @@ body{
     flex-direction: row;
     width: 100%;
     height: 100%;
-
 }
 
+.box #right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
 
+/* #ugg{
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    padding-top: 150px;
+} */
