@@ -1,11 +1,16 @@
 div#aboutme{
-    grid-area: "left";
+    grid-area: left;
     width: 100%;
 }
 
 div#photo{
     grid-area: right;
     width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -15,15 +20,16 @@ body {
 	font: 20px 'BazarMedium';
 	letter-spacing: 2px;
     text-align: center;
+    align-content: space-evenly;
 }
 
 
 header{
     text-align: left;
-    
 }
 h1{
     text-align: right;
+    font-size: 60px;
 }
 p{
     color: #ddecdf;	text-shadow: 2px 2px 5px #041464, 2px 2px 0px #000107;
@@ -36,12 +42,12 @@ body{
     grid-template-columns: 1fr 1fr ;
     height: 100vh;
     width: 100vw;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas: "left right";
 
     background: rgb(186,196,208);
     background: linear-gradient(180deg, rgba(186,196,208,1) 0%, rgba(195,199,208,1) 12%, rgba(196,197,201,1) 17%, rgba(201,200,206,1) 26%, rgba(141,151,163,1) 39%, rgba(140,153,161,1) 52%, rgba(111,137,134,1) 66%, rgba(125,139,150,1) 73%);
 
+    align-items: center;
 }
 
 
@@ -59,7 +65,7 @@ body{
   }
 
 
-  div#photo > header{
+  div#photo > .main{
      text-align: center;
   }
 
@@ -67,7 +73,7 @@ body{
       text-align: center;
   }
 
- header > img {
+ .main > img {
     width: 600px;
     height: 600px;
 }
@@ -102,4 +108,9 @@ footer a{
 
 div#photo p{
     text-align: center;
+}
+
+div#photo header{
+    align-items: flex-start;
+    
 }

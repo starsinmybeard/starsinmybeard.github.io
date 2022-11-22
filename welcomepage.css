@@ -7,12 +7,12 @@ body{
 .container {
     display: grid;
     border: 1px solid black;
-    font-size: 20px;
     height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: #333;
+    background: rgb(56, 79, 107);
+    background: linear-gradient(180deg, rgb(92, 102, 114) 0%, rgb(105, 112, 128) 12%, rgba(196,197,201,1) 17%, rgba(201,200,206,1) 26%, rgba(141,151,163,1) 39%, rgba(140,153,161,1) 52%, rgba(111,137,134,1) 66%, rgba(125,139,150,1) 90%);
 }
 
 .box{
@@ -43,7 +43,7 @@ body{
   a:link, a:visited {
       
 	color: #0beb28;	text-shadow: 2px 2px 3px #0c34ff, 2px 2px 0px #041470;
-	font: 20px 'BazarMedium';
+	font: 35px 'BazarMedium';
 	letter-spacing: 2px;
     text-align: center;
    
