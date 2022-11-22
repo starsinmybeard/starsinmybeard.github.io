@@ -29,8 +29,6 @@ body{
     flex-shrink: 10;
     width: 125%;
     height: 125%
-
-    
 }
 
 @font-face {
@@ -45,10 +43,22 @@ body{
   }
 
   a:link, a:visited {
+      
 	color: #0abe22;	text-shadow: 1px 1px 0px #0c34ff, 2px 2px 0px #000107;
 	font: 20px 'BazarMedium';
 	letter-spacing: 2px;
     text-align: center;
+   
+}
+
+.box #links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
 }
 
 

@@ -1,3 +1,51 @@
+div#aboutme{
+    grid-area: "left";
+    width: 100%;
+}
+
+div#photo{
+    grid-area: right;
+    width: 100%;
+}
+
+
+
+body {
+	color: #0abe22;	text-shadow: 1px 1px 0px #333852, 1px 2px 2px #000107;
+	font: 20px 'BazarMedium';
+	letter-spacing: 2px;
+    text-align: center;
+}
+
+
+header{
+    text-align: left;
+    
+}
+h1{
+    text-align: right;
+}
+p{
+    color: #ddecdf;	text-shadow: 2px 2px 5px #041464, 2px 2px 0px #000107;
+    text-align: left;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "left right";
+
+    background: rgb(186,196,208);
+    background: linear-gradient(180deg, rgba(186,196,208,1) 0%, rgba(195,199,208,1) 12%, rgba(196,197,201,1) 17%, rgba(201,200,206,1) 26%, rgba(141,151,163,1) 39%, rgba(140,153,161,1) 52%, rgba(111,137,134,1) 66%, rgba(125,139,150,1) 73%);
+
+}
+
+
+
 
 @font-face {
     font-family: 'BazarMedium';
@@ -10,33 +58,48 @@
     font-style: normal;
   }
 
-  body {
-	color: #0abe22;	text-shadow: 1px 1px 0px #333852, 2px 2px 0px #000107;
-	font: 20px 'BazarMedium';
-	letter-spacing: 2px;
-    text-align: center;
-    display: grid;
+
+  div#photo > header{
+     text-align: center;
+  }
+
+  div#photo > h1{
+      text-align: center;
+  }
+
+ header > img {
+    width: 600px;
+    height: 600px;
 }
-header{
+
+#section2{
     text-align: left;
 }
-h1{
+
+#p2{
     text-align: right;
 }
-p{
-    color: #0abe22;	text-shadow: 1px 1px 1px #0c34ff, 2px 2px 0px #000107;
+
+p > a{
+    color: #ddecdf;	text-shadow: 2px 2px 5px #041464, 2px 2px 0px #000107;
     text-align: left;
-    
 }
 
-
-body{
-    grid-template-columns: 1fr 1fr ;
-    height: 100vh;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "left right"
+footer{
+    color: #ddecdf;	text-shadow: 2px 2px 5px #041464, 2px 2px 0px #000107;
+    text-align: left;
+    font-variant: small-caps;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-div.left-side{
-    grid-area: left;
+footer a{
+        color: #ddecdf;	text-shadow: 2px 2px 5px #041464, 2px 2px 0px #000107;
+        text-align: left;
+}
+
+div#photo p{
+    text-align: center;
 }
