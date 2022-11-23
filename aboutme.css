@@ -1,6 +1,7 @@
 div#aboutme{
     grid-area: left;
     width: 100%;
+    padding-left: 20px;
 }
 
 div#photo{
@@ -34,6 +35,7 @@ h1{
 p{
     color: #ddecdf;	text-shadow: 2px 2px 5px #041464, 2px 2px 0px #000107;
     text-align: left;
+    padding-right: 5px;
 }
 
 
